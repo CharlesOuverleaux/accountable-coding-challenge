@@ -7,6 +7,12 @@ function Blog() {
         <div className="container-stickybanner">
           <div className="stickybanner">
             <p>Receive 3 tax tips to start optimizing your taxes!</p>
+            <form action="" method="post" class="sticky-banner-form">
+              <input type="email" placeholder="Your email address" required />
+              <div class="sticky-banner-button">
+                <input type="submit" value="Subscribe!" />
+              </div>
+            </form>
           </div>
         </div>
         <div className="container container--blog">
