@@ -1,0 +1,110 @@
+html,
+body {
+  font-family: 'Assistant', sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  scroll-behavior: smooth;
+  color: #28004b;
+}
+/* ## Fonts
+--------------------------------------------- */
+@font-face {
+  font-family: 'Assistant';
+  font-display: auto;
+  src: url('./assets/fonts/assistant/assistantExtraLight.ttf');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Assistant';
+  font-display: auto;
+  src: url('./assets/fonts/assistant/assistantLight.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Assistant';
+  font-display: auto;
+  src: url('./assets/fonts/assistant/assistantRegular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Assistant';
+  font-display: auto;
+  src: url('./assets/fonts/assistant/assistantSemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Assistant';
+  font-display: auto;
+  src: url('./assets/fonts/assistant/assistantBold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('./assets/fonts/avenir/AvenirNext-Medium-06.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('./assets/fonts/avenir/AvenirNext-Bold-01.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+}
+.container {
+  margin: auto;
+  width: 1100px;
+}
+.section-h2 {
+  font-family: 'Avenir Next';
+  font-size: 48px;
+  padding: 0 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: auto;
+  max-width: 800px;
+  font-weight: 700;
+  letter-spacing: -0.075rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+    max-width: initial;
+  }
+
+  .container--author {
+    padding: 40px 10px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+  .section-h2 {
+    font-size: 32px;
+  }
+}

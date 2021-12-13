@@ -1,0 +1,208 @@
+.container--blog {
+  width: 700px;
+}
+.blogpost-content {
+  margin-top: 100px;
+}
+
+.container-stickybanner{
+  /* position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 23px; */
+  position: fixed;
+  top: 150px;
+  right: 23px;
+}
+
+.stickybanner {
+  border: 2px solid black;
+  border-radius: 16px;
+  width: 320px;
+  height: 294px;
+}
+
+/* breadcrumb stuff */
+.breadcrumbs {
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+p#breadcrumbs {
+  text-align: left;
+  margin: 0;
+}
+p#breadcrumbs a,
+p#breadcrumbs a:visited {
+  font-size: 14px !important;
+  color: rgba(41, 0, 77, 0.7) !important;
+  letter-spacing: 0.01em !important;
+}
+p#breadcrumbs a:focus {
+  outline: thin dotted;
+  text-decoration: underline;
+}
+p#breadcrumbs a:active,
+p#breadcrumbs a:hover {
+  outline: 0;
+  text-decoration: underline;
+}
+span.breadcrumb_last,
+#breadcrumbs span {
+  color: rgba(41, 0, 77, 0.7) !important;
+  font-size: 14px !important;
+  letter-spacing: 0.01em !important;
+}
+.read-in {
+  opacity: 0.5;
+  text-align: left;
+  padding-left: 0 !important;
+  margin: 30px 0;
+}
+/* Doesn't follow BEM rules because of WP */
+.articlepiece {
+  color: rgba(40, 0, 75, 0.8);
+  font-size: 1.1em;
+  line-height: 175%;
+}
+.articlepiece h2 {
+  font-family: 'Avenir Next';
+  font-size: 32px;
+  padding: 0;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-weight: 700;
+  color: rgba(40, 0, 75, 0.7);
+}
+.articlepiece h3 {
+  font-family: 'Avenir Next';
+  font-size: 24px;
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  color: rgba(40, 0, 75, 0.6);
+}
+.articlepiece a {
+  text-decoration-line: underline;
+  font-weight: 600;
+  color: #7654d3;
+}
+.articlepiece img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 5rem;
+  max-width: 80%;
+  height: auto;
+}
+.articlepiece img.alignright {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+.articlepiece img.alignleft {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+.articlepiece img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.articlepiece .alignright {
+  float: right;
+}
+.articlepiece .alignleft {
+  float: left;
+}
+.articlepiece .aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.author {
+  margin: 40px 20px;
+  text-align: center;
+}
+.container--author {
+  border-top: 1px solid rgb(224, 224, 224);
+  padding: 40px 20px;
+}
+.author p {
+  padding: 0 20px;
+  margin: 0;
+  color: gray;
+  font-size: 1em;
+}
+.author span {
+  font-weight: 600;
+}
+.author-title {
+  color: #ab49a0;
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.author-profile-picture {
+  border-radius: 50%;
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+.article-fixed-button {
+  position: fixed;
+  top: -40px;
+  opacity: 0;
+  right: 15px;
+  padding: 15px 30px;
+  background: #6d4ad3;
+  color: white;
+  border-radius: 50px;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  z-index: 2000;
+  text-decoration: none;
+  font-family: 'Avenir Next';
+  font-size: 16px;
+  letter-spacing: -0.005em;
+}
+.article-fixed-button:hover {
+  background: linear-gradient(0deg, rgba(40, 0, 75, 0.3), rgba(40, 0, 75, 0.3)),
+    #6d4ad3;
+  text-decoration: none;
+  color: white;
+}
+.article-fixed-button:focus {
+  color: white;
+  text-decoration: none;
+  outline: 0;
+}
+@media screen and (max-width: 770px) {
+  .author {
+    margin-bottom: 80px;
+  }
+  .blogpost-content {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .container--blog {
+    width: 100%;
+  }
+}
+
+/* WORDPRESS IMPORT */
+
+img.wp-smiley,
+img.emoji {
+  display: inline !important;
+  border: none !important;
+  box-shadow: none !important;
+  height: 1em !important;
+  width: 1em !important;
+  margin: 0 0.07em !important;
+  vertical-align: -0.1em !important;
+  background: none !important;
+  padding: 0 !important;
+}
