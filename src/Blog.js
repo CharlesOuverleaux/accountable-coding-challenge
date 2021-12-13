@@ -5,13 +5,15 @@ function Blog() {
     <div className="App">
       <div className="blogpost-content">
         <div className="container-stickybanner">
-          <div className="stickybanner">
-            <p>Receive 3 tax tips to start optimizing your taxes!</p>
+          <div className="stickybanner-content">
             <form action="" method="post" class="sticky-banner-form">
-              <input type="email" placeholder="Your email address" required />
-              <div class="sticky-banner-button">
-                <input type="submit" value="Subscribe!" />
-              </div>
+              <input
+                type="email"
+                placeholder="Your email address"
+                required
+                className="sticky-banner-input"
+              />
+              <button type="submit" className="sticky-banner-button"></button>
             </form>
           </div>
         </div>
