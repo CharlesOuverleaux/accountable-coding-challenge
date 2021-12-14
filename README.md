@@ -22,7 +22,7 @@ React
 
 React is one of the most popular framework/library. By using React to build this feature we can easily re-use this feature/component in other larger components or Apps. Thanks to React we can separate our concerns, we can easily include the logic (email input/ post request), input field and styles in the components.
 
-## Extra questions
+## Questions
 
 The sticky banner experiment is desktop only, at least the way it is designed for
 now. How can we adapt this on mobile?
@@ -43,7 +43,14 @@ What else could we do to improve CR on the blog?
 -Show social proof (e.g. Already 20K people are saving money in Belgium)
 -Have a trial period for the paying version (e.g. first month is for free)
 -Improve product offer (e.g. only charge user if he uses more than the free version)
+-Add animation on design (e.g. the man waving instead of static)
+-Add a confidentialy message ensuring the company respects GDPR rules.
 
+## Extra thoughts
+
+- Add testing to improve reliability
+- Add further validations on email input field to improve lead quality
+- Add a mobile version to improve conversion rate
 
 ## How to use this feature?
 
