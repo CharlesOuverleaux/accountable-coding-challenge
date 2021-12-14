@@ -4,12 +4,20 @@ import SuccessMessage from './components/SuccessMessage';
 import Banner from './components/Banner';
 
 function Blog() {
-  const [emailSent, setEmailSent] = useState(false);
+  const [isEmailSubmitted, setisEmailSubmitted] = useState(false);
+
+  const toggleEmailSubmissionState = () => {
+    setisEmailSubmitted(true);
+  }
 
   return (
     <div className="App">
       <div className="blogpost-content">
-      {emailSent ? <SuccessMessage /> : <Banner/> }
+        {isEmailSubmitted ? (
+          <SuccessMessage />
+        ) : (
+          <Banner toggleEmailSubmissionState={toggleEmailSubmissionState} />
+        )}
         <div className="container container--blog">
           <div className="breadcrumbs">
             <p id="breadcrumbs">
