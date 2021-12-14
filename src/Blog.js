@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import axios from "axios";
 import './Blog.css';
+import SuccessMessage from './components/SuccessMessage';
 
 function Blog() {
   const [userEmail, setUserEmail] = useState('');
@@ -26,10 +27,7 @@ function Blog() {
     e.preventDefault()
     submitEmail()
   }
-  const sucessfull = (
-    <div className="container-stickybanner-successfull">
-    </div>
-  );
+
 
   const stickybanner = (
     <div className="container-stickybanner">
@@ -50,7 +48,7 @@ function Blog() {
   return (
     <div className="App">
       <div className="blogpost-content">
-      {emailSent ? sucessfull : stickybanner }
+      {emailSent ? <SuccessMessage /> : stickybanner }
         <div className="container container--blog">
           <div className="breadcrumbs">
             <p id="breadcrumbs">

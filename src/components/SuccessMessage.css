@@ -1,0 +1,10 @@
+.SuccessMessage {
+  position: fixed;
+  top: 150px;
+  right: 23px;
+  background-image: url(../assets/images/Successfull_Email_Sent.svg);
+  border-radius: 16px;
+  object-fit: cover;
+  width: 320px;
+  height: 294px;
+}
