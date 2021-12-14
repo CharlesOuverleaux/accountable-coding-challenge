@@ -1,17 +1,24 @@
 import { useState } from 'react';
+import axios from "axios";
 import './Blog.css';
 
 function Blog() {
   const [userEmail, setuserEmail] = useState('');
+  const [userId, setUserId] = useState('');
 
   const handleChange = (e) => {
     setuserEmail(e.target.value);
-    console.log(userEmail)
   };
+
+  async function submitEmail() {
+    const data = {"email": userEmail}
+    const url = "https://accountablemuj3pl9f-registerbloglead.functions.fnc.fr-par.scw.cloud"
+    const api_call = await axios.post(url,data)
+  }
 
   const handleSubmit = e => {
     e.preventDefault()
-    console.log('Hello')
+    submitEmail()
   }
   return (
     <div className="App">
