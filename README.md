@@ -1,4 +1,4 @@
-# Frontend Coding Challenge - FEATURE STICKY SIGN UP BANNER
+# Frontend Coding Challenge
 
 This feature is a Sign up Banner component which consists of an input field (user email) and a submit button.
 
@@ -24,16 +24,19 @@ React is one of the most popular framework/library. By using React to build this
 
 ## Extra questions
 
-- The sticky banner experiment is desktop only, at least the way it is designed for
+The sticky banner experiment is desktop only, at least the way it is designed for
 now. How can we adapt this on mobile?
+
 For mobile we need two inputs:
   - A figma design for the mobile banner
   - Using media queries we can switch to the mobile-friendly design
-- How can we verify if this new sticky banner is an improvement for the conversion
+
+How can we verify if this new sticky banner is an improvement for the conversion
 rate? How can we know it doesn’t worsen the UX on the blog?
+
 To verify the Marketing team hypothesis, we split the traffic, 50% of the visitors will see the Sign Up banner (A/B testing). After a XX time (XX defined by the amounts of visits needed to validate the hypothesis) we compare if the conversion rate (CR) improved or declined. Depending on CR, we can decide to pursue having a Sign Up banner or not.
 
-5. What else could we do to improve CR on the blog?
+What else could we do to improve CR on the blog?
 
 -Incentive the sign up process (e.g. -10% on the first 3 months, offer an introduction call to support with the use of the product)
 -Test out appealing tag lines (e.g. Do you feel like you don't get any tax returns?)
