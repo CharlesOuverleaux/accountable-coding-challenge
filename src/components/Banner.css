@@ -1,0 +1,56 @@
+.Banner{
+  position: fixed;
+  top: 150px;
+  right: 23px;
+  background-image: url(../assets/images/Banner.svg);
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+
+.Banner__content {
+  width: 280px;
+  height: 294px;
+  margin: 0 22px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.Banner__form {
+  display: flex;
+  flex-direction: row;
+}
+
+.Banner__input {
+  margin-bottom: 25px;
+  height: 32px;
+  width: 254px;
+  border-radius: 200px;
+  border: none;
+  padding: 8px 0px 8px 23px;
+}
+
+.Banner__input::placeholder {
+  color: #D3D3D3;
+  font-family: Avenir Next;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.01em;
+  text-align: left;
+
+
+}
+
+.Banner__button {
+  background-image: url(../assets/images/Button.svg);
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin-left: -48px;
+}

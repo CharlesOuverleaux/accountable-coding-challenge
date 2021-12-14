@@ -1,54 +1,15 @@
 import { useState } from 'react';
-import axios from "axios";
 import './Blog.css';
 import SuccessMessage from './components/SuccessMessage';
+import Banner from './components/Banner';
 
 function Blog() {
-  const [userEmail, setUserEmail] = useState('');
   const [emailSent, setEmailSent] = useState(false);
 
-  const handleChange = (e) => {
-    setUserEmail(e.target.value);
-  };
-
-  async function submitEmail() {
-    const data = {"email": userEmail}
-    const url = "https://accountablemuj3pl9f-registerbloglead.functions.fnc.fr-par.scw.cloud"
-    await axios
-      .post(url, data)
-      .then((response) => {
-        if (response.data.message === "ok"){
-          setEmailSent(true)
-        };
-      })
-  }
-
-  const handleSubmit = e => {
-    e.preventDefault()
-    submitEmail()
-  }
-
-
-  const stickybanner = (
-    <div className="container-stickybanner">
-      <div className="stickybanner-content">
-        <form className="sticky-banner-form" onSubmit={handleSubmit}>
-          <input
-            className="sticky-banner-input"
-            type="email"
-            placeholder="Your email address"
-            onChange={handleChange}
-            required
-          />
-          <button type="submit" className="sticky-banner-button"></button>
-        </form>
-      </div>
-    </div>
-  );
   return (
     <div className="App">
       <div className="blogpost-content">
-      {emailSent ? <SuccessMessage /> : stickybanner }
+      {emailSent ? <SuccessMessage /> : <Banner/> }
         <div className="container container--blog">
           <div className="breadcrumbs">
             <p id="breadcrumbs">
