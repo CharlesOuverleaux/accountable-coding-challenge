@@ -1,17 +1,30 @@
+import { useState } from 'react';
 import './Blog.css';
 
 function Blog() {
+  const [userEmail, setuserEmail] = useState('');
+
+  const handleChange = (e) => {
+    setuserEmail(e.target.value);
+    console.log(userEmail)
+  };
+
+  const handleSubmit = e => {
+    e.preventDefault()
+    console.log('Hello')
+  }
   return (
     <div className="App">
       <div className="blogpost-content">
         <div className="container-stickybanner">
           <div className="stickybanner-content">
-            <form action="" method="post" class="sticky-banner-form">
+            <form className="sticky-banner-form" onSubmit={handleSubmit}>
               <input
+                className="sticky-banner-input"
                 type="email"
                 placeholder="Your email address"
+                onChange={handleChange}
                 required
-                className="sticky-banner-input"
               />
               <button type="submit" className="sticky-banner-button"></button>
             </form>
@@ -42,7 +55,7 @@ function Blog() {
             Copyrights revenue for Belgian freelancers
           </h1>
           <div className="read-in">
-            Updated on <time datetime="2021-06-02">June 2, 2021</time>
+            Updated on <time dateTime="2021-06-02">June 2, 2021</time>
             <br />
             Read in
             <span className="span-reading-time rt-reading-time">
