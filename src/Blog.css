@@ -29,15 +29,15 @@
 
 .sticky-banner-input {
   margin-bottom: 25px;
-  height: 46px;
-  width: 277px;
+  height: 32px;
+  width: 254px;
   border-radius: 200px;
   border: none;
+  padding: 8px 0px 8px 23px;
 }
 
 .sticky-banner-input::placeholder {
   color: #D3D3D3;
-  padding: 8px 23px;
   font-family: Avenir Next;
   font-size: 14px;
   font-style: normal;
