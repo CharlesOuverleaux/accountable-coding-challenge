@@ -38,19 +38,19 @@ To verify the Marketing team hypothesis, we split the traffic, 50% of the visito
 
 What else could we do to improve CR on the blog?
 
--Incentive the sign up process (e.g. -10% on the first 3 months, offer an introduction call to support with the use of the product)
--Test out appealing tag lines (e.g. Do you feel like you don't get any tax returns?)
--Show social proof (e.g. Already 20K people are saving money in Belgium)
--Have a trial period for the paying version (e.g. first month is for free)
--Improve product offer (e.g. only charge user if he uses more than the free version)
--Add animation on design (e.g. the man waving instead of static)
--Add a confidentialy message ensuring the company respects GDPR rules.
+-Incentive the sign up process (e.g. -10% on the first 3 months, offer an introduction call to support with the use of the product)\
+-Test out appealing tag lines (e.g. Do you feel like you don't get any tax returns?)\
+-Show social proof (e.g. Already 20K people are saving money in Belgium)\
+-Have a trial period for the paying version (e.g. first month is for free)\
+-Improve product offer (e.g. only charge user if he uses more than the free version)\
+-Add animation on design (e.g. the man waving instead of static)\
+-Add a confidentialy message ensuring the company respects GDPR rules.\
 
 ## Extra thoughts
 
-- Add testing to improve reliability
-- Add further validations on email input field to improve lead quality
-- Add a mobile version to improve conversion rate
+- Add testing to improve reliability\
+- Add further validations on email input field to improve lead quality\
+- Add a mobile version to improve conversion rate\
 
 ## How to use this feature?
 
