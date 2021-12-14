@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Blog.css';
 import SuccessMessage from './components/SuccessMessage';
-import Banner from './components/Banner';
+import SignUpBanner from './components/SignUpBanner';
 
 function Blog() {
   const [isEmailSubmitted, setisEmailSubmitted] = useState(false);
@@ -16,7 +16,7 @@ function Blog() {
         {isEmailSubmitted ? (
           <SuccessMessage />
         ) : (
-          <Banner toggleEmailSubmissionState={toggleEmailSubmissionState} />
+          <SignUpBanner toggleEmailSubmissionState={toggleEmailSubmissionState} />
         )}
         <div className="container container--blog">
           <div className="breadcrumbs">

@@ -1,14 +1,14 @@
-.Banner{
+.SignUpBanner{
   position: fixed;
   top: 150px;
   right: 23px;
-  background-image: url(../assets/images/Banner.svg);
+  background-image: url(../assets/images/SignUpBanner.svg);
   border-radius: 16px;
   object-fit: cover;
 }
 
 
-.Banner__content {
+.SignUpBanner__content {
   width: 280px;
   height: 294px;
   margin: 0 22px;
@@ -16,12 +16,12 @@
   align-items: flex-end;
 }
 
-.Banner__form {
+.SignUpBanner__form {
   display: flex;
   flex-direction: row;
 }
 
-.Banner__input {
+.SignUpBanner__input {
   margin-bottom: 25px;
   height: 32px;
   width: 254px;
@@ -30,7 +30,7 @@
   padding: 8px 0px 8px 23px;
 }
 
-.Banner__input::placeholder {
+.SignUpBanner__input::placeholder {
   color: #D3D3D3;
   font-family: Avenir Next;
   font-size: 14px;
@@ -43,7 +43,7 @@
 
 }
 
-.Banner__button {
+.SignUpBanner__button {
   background-image: url(../assets/images/Button.svg);
   width: 48px;
   height: 48px;
